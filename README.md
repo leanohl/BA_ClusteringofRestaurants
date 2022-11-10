@@ -2,9 +2,9 @@
  Team Project 5 - Clustering of Resaurants in Seoul and Vancouver
 
 Preprocessing reponsibility
-1. NamYeong Kim Korean restaurant data set
+1. NamYeong Kim Korean restaurant data set + data scaling
 2. Sua Kim korean foreign data sets 
-3. Lea Vancouver data sets
+3. Lea Vancouver data sets + data scaling
 
 ---------------------------------------------------------------------------------------------------------------
 Vancouvver / Seoul 
