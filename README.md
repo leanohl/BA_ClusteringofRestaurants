@@ -29,6 +29,9 @@ https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.fea
 
 https://towardsdatascience.com/strategic-location-for-establishing-an-asian-restaurant-c3aecf2496b1
 
-Presentation:
+Presentation_proposal:
 https://docs.google.com/presentation/d/1S7PtsZcltAvBRVWNfxYOq8n8C-J9iMK5DJ1AyKs_qx8/edit?usp=sharing
+
+Presentation_mid : 
+https://docs.google.com/presentation/d/1tTpX0eMBt7jy07XvRNR9kcnZQgEgCwAAp-yL5cLEEM4/edit?usp=sharing
 
