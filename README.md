@@ -37,15 +37,17 @@ https://docs.google.com/presentation/d/1tTpX0eMBt7jy07XvRNR9kcnZQgEgCwAAp-yL5cLE
 
 
 
-## Preprocessing of the Vancouver Dataset:
-# Challenges:
-1. The dataset of the restaurants if comparibly small
+# Preprocessing of the Vancouver Dataset:
+## Challenges:
+1. The dataset of the restaurants if relatively small
 2. The feature "Type of cuisine" is not really specific and we can not use the instance "Restaurant"
-3. The Landmark is only an adress not a point or diistrict
+3. The Landmark is only an adress not a point or district
+4. Many addresses are just "Vancouver, BC, Canada"
 
-# Possible solutions:
+## Possible solutions:
 1. The instances of the feature "Type of cuisine" that are just named restaurant: 
 	- not only delet the instance but try to find the type of cuisine with the help of the name of the restaurant
-2. With the help of geopy I try to transfer the address to a point of the map containing of longitude and latitude
-	- benifit: with folium we can create an interactive map
+2. With the help of geopy I try to transfer the address to a point containing longitude and latitude
+	- benefit: with folium we can create an interactive map
+
 
