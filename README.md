@@ -27,7 +27,9 @@ https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
 - Vancouver dataset: cencus including income and foreigners
 https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
 
+Related Projects:
 https://towardsdatascience.com/strategic-location-for-establishing-an-asian-restaurant-c3aecf2496b1
+https://towardsdatascience.com/munich-neighborhood-clustering-using-k-means-cde98a6e3199
 
 Presentation_proposal:
 https://docs.google.com/presentation/d/1S7PtsZcltAvBRVWNfxYOq8n8C-J9iMK5DJ1AyKs_qx8/edit?usp=sharing
@@ -49,5 +51,6 @@ https://docs.google.com/presentation/d/1tTpX0eMBt7jy07XvRNR9kcnZQgEgCwAAp-yL5cLE
 	- not only delet the instance but try to find the type of cuisine with the help of the name of the restaurant
 2. With the help of geopy I try to transfer the address to a point containing longitude and latitude
 	- benefit: with folium we can create an interactive map
+
 
 
