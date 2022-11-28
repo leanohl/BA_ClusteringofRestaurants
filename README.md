@@ -37,6 +37,8 @@ https://docs.google.com/presentation/d/1S7PtsZcltAvBRVWNfxYOq8n8C-J9iMK5DJ1AyKs_
 Presentation_mid : 
 https://docs.google.com/presentation/d/1tTpX0eMBt7jy07XvRNR9kcnZQgEgCwAAp-yL5cLEEM4/edit?usp=sharing
 
+Presentation_final :
+https://docs.google.com/presentation/d/1b57Ke9AQ9jrPqcL6t2nhY3J17rkCiHoRuwFWqvXjFrw/edit?usp=sharing
 
 
 # Preprocessing of the Vancouver Dataset:
