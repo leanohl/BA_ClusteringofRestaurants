@@ -18,8 +18,7 @@ clustering the type of restaurants in specific rergion -> we can know what kind 
 https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do?tab=S
 - Korean dataset of foreigner
 https://data.seoul.go.kr/dataList/11026/S/2/datasetView.do
-- Korean dataset of Income
-- https://golmok.seoul.go.kr/stateArea.do
+- Korean dataset of Income https://golmok.seoul.go.kr/stateArea.do
 
 - Vancouver dataset of restaurants
 https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset?select=yelp_academic_dataset_business.json
