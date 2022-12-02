@@ -11,18 +11,28 @@ K- MEANS CLUSTERING
 
 
 [Introduction]
-Opening a restaurant in big capital cities can be quite a challenge. Not only good food needs to be saved in order to not go bankrupt, but also the people living there should value the food. To find the best location to open a restaurant depends on a lot of different factors. People in that area should earn enough money to be able to go to a restaurant. Next, if you want to open a restaurant with a cuisine from another country, some people from that country should live close to the restaurant, to be sure to have some customers. Also, it makes a restaurant more authentic, when people from that country enjoy the food. Third, there should not be too many competitors, since people than have to choose between your restaurant and others.
-Therefore, we choose to cluster the restaurants from Seoul and Vancouver in order to find the best location to open a restaurant from a specific type of cuisine. The goal is to reduce business failures due to incorrect market analysis. 
+Opening a restaurant in big capital cities can be quite a challenge. 
+Not only good food needs to be saved in order to not go bankrupt, but also the people living there should value the food. To find the best location to open a restaurant depends on a lot of different factors. 
+People in that area should earn enough money to be able to go to a restaurant. 
+Next, if you want to open a restaurant with a cuisine from another country, some people from that country should live close to the restaurant, to be sure to have some customers. 
+Also, it makes a restaurant more authentic, when people from that country enjoy the food. 
+Third, there should not be too many competitors, since people than have to choose between your restaurant and others.
+Therefore, we choose to cluster the restaurants from Seoul and Vancouver in order to find the best location to open a restaurant from a specific type of cuisine. 
+The goal is to reduce business failures due to incorrect market analysis. 
+
 
 [Data Acquisition]
 To create such a clustering method, datasets from both cities including income, citizenship and a restaurant dataset are needed.
 For the city Seoul the datasets were available on data Seoul:
-	Korean dataset of restaurant: 
-o	https://www.data.go.kr/data/15083033/fileData.do
-	 Korean dataset of foreigner:
-o	https://data.seoul.go.kr/dataList/803/S/2/datasetView.do?tab=S 
-	Korean dataset of Income:
-o	https://golmok.seoul.go.kr/stateArea.do
+
+Korean dataset of restaurant: 
+-https://www.data.go.kr/data/15083033/fileData.do
+
+Korean dataset of foreigner:
+-https://data.seoul.go.kr/dataList/803/S/2/datasetView.do?tab=S 
+
+Korean dataset of Income:
+-https://golmok.seoul.go.kr/stateArea.do
 
 Kaggle provided the restaurant dataset for Vancouver: 
 	https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
