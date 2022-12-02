@@ -1,58 +1,27 @@
 # BA_ClusteringofRestaurants
  Team Project 5 - Clustering of Resaurants in Seoul and Vancouver
 
-Preprocessing reponsibility
-1. NamYeong Kim Korean restaurant data set + data scaling
-2. Sua Kim korean dataset preprocessing + draw folium map + clustering 
-3. Lea Vancouver data sets + data scaling
+Clustering of Restaurants from Vancouver and Seoul
+K- MEANS CLUSTERING
+17101936 Kim NamYeong
+20102104 Kim Sua
+22170091 Lea Scharpf 
 
----------------------------------------------------------------------------------------------------------------
-Vancouvver / Seoul 
-clustering the type of restaurants in specific rergion -> we can know what kind of restaurant will be opened(Japanese, Chinese, Asian, Western) 
-
-1. number of competitors ( use the amount of each type of restaurants )
-2. income per household ( purchasing power )
-3. the percentage of foreign people 
-
-- Korean dataset of restaurant 
-https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do?tab=S
-- Korean dataset of foreigner
-https://data.seoul.go.kr/dataList/802/S/2/datasetView.do
-- Korean dataset of Income 
-https://golmok.seoul.go.kr/stateArea.do
-
-- Vancouver dataset of restaurants
-https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset?select=yelp_academic_dataset_business.json
-or
-https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
-
-- Vancouver dataset: cencus including income and foreigners
-https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
-
-
-Presentation_proposal:
-https://docs.google.com/presentation/d/1S7PtsZcltAvBRVWNfxYOq8n8C-J9iMK5DJ1AyKs_qx8/edit?usp=sharing
-
-Presentation_mid : 
-https://docs.google.com/presentation/d/1tTpX0eMBt7jy07XvRNR9kcnZQgEgCwAAp-yL5cLEEM4/edit?usp=sharing
-
-Presentation_final :
-https://docs.google.com/presentation/d/1b57Ke9AQ9jrPqcL6t2nhY3J17rkCiHoRuwFWqvXjFrw/edit?usp=sharing
-
-
-# Preprocessing of the Vancouver Dataset:
-## Challenges:
-1. The dataset of the restaurants if relatively small
-2. The feature "Type of cuisine" is not really specific and we can not use the instance "Restaurant"
-3. The Landmark is only an adress not a point or district
-4. Many addresses are just "Vancouver, BC, Canada"
-
-## Possible solutions:
-1. The instances of the feature "Type of cuisine" that are just named restaurant: 
-	- not only delet the instance but try to find the type of cuisine with the help of the name of the restaurant
-2. With the help of geopy I try to transfer the address to a point containing longitude and latitude
-	- benefit: with folium we can create an interactive map
-	
-	
-#Korea
-- For analyzing korean dataset, make 'data' file and upload the csv file.
+  Business Analytics | 29.11.2022
+  
+1.	Introduction
+Opening a restaurant in big capital cities can be quite a challenge. Not only good food needs to be saved in order to not go bankrupt, but also the people living there should value the food. To find the best location to open a restaurant depends on a lot of different factors. People in that area should earn enough money to be able to go to a restaurant. Next, if you want to open a restaurant with a cuisine from another country, some people from that country should live close to the restaurant, to be sure to have some customers. Also, it makes a restaurant more authentic, when people from that country enjoy the food. Third, there should not be too many competitors, since people than have to choose between your restaurant and others.
+Therefore, we choose to cluster the restaurants from Vancouver and Seoul in order to find the best location to open a restaurant from a specific type of cuisine. The goal is to reduce business failures due to incorrect market analysis. 
+2.	Data import
+To create such a clustering method, datasets from both cities including income, citizenship and a restaurant dataset are needed.
+Kaggle provided the restaurant dataset for Vancouver: 
+-	https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
+The dataset for the income and the citizenship was found at Opendata Vancouver:
+-	https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
+For the city Seoul the datasets were available on data Seoul:
+-	Korean dataset of restaurant: 
+o	https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do?tab=S
+-	 Korean dataset of foreigner:
+o	https://data.seoul.go.kr/dataList/803/S/2/datasetView.do?tab=S
+3.	Preprocessing
+After importing these data sets it was necessary to do preprocessing steps to clean the datasets.
