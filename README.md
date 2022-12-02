@@ -43,23 +43,29 @@ Before preprocessing the foreign datasets looked like this:
 ![image](https://user-images.githubusercontent.com/40350018/205353920-d579c353-e422-4f8f-be84-95fa1acd248f.png)
 
 After preprocessing the foreign datasets looked like this:
+
 ![image](https://user-images.githubusercontent.com/40350018/205353943-3f6a9d7c-0e73-4ad5-9cc8-f4ecc4e42cb1.png)
 
 In our restaurant data set, there are all the stores in seoul so we have to exclude that redundant information.
 Like foreigner data set we calculate the percentage of each restaurant.
 Before preprocessing the restaurant datasets looked like this:
+
 ![image](https://user-images.githubusercontent.com/40350018/205353974-2410f2ab-d08a-46e8-9cec-f7ff7d5c3c69.png)
 
 After preprocessing the restaurant datasets looked like this:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354034-907e3ac2-c481-414a-8a35-3cce8fff8483.png)
 
 Before preprocessing the income datasets looked like this:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354077-70f9d5a6-eacb-482f-a008-a9ac58218721.png)
 
 After preprocessing the income datasets looked like this:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354108-1ec875bd-9538-4e03-8f37-b50537eb52c0.png)
 
 After merging all korean datasets:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354136-e7714d46-fb4f-4c77-bcdb-47f1ad05f59f.png)
 
 
@@ -70,9 +76,10 @@ Before preprocessing the datasets looked like this:
 
 ![image](https://user-images.githubusercontent.com/40350018/205354185-2a36a11c-de8e-427a-9859-7b0f13a397f1.png)
 
+
 ![image](https://user-images.githubusercontent.com/40350018/205354196-690e761d-b002-4aa8-a47f-de5fa3ba82c2.png)
 
--	Pre-processing of Vancouver income dataset
+Pre-processing of Vancouver income dataset
 The Vancouver income dataset contains the features: total income and the districts of Vancouver.  24 districts of Vancouver are included. Every instance is about the range of income, going from under 10 000$ in 12 steps up to 150 000$ income and more.
 The row “$100.000 and over” needs to be dropped because it only contains the information found in the rows before and after.
 We are only interested in the weighted average income from each district. Therefore, it is necessary to calculate the average income first and then calculate the total weighted average income for every district.
