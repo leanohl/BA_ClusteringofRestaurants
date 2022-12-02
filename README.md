@@ -1,7 +1,7 @@
 # BA_ClusteringofRestaurants
  Team Project 5 - Clustering of Resaurants in Seoul and Vancouver
 
-FIND THE BEST LOCATION TO OPEN A RESTAURANT OF A SPECIFIC CUISINE IN SEOUL AND VANCOUVER
+Find the best location to open a restaurant of a specific cuisine in Seoul and Vancouver
 K- MEANS CLUSTERING
 17101936 Kim NamYeong
 20102104 Kim Sua
@@ -78,7 +78,8 @@ The row “$100.000 and over” needs to be dropped because it only contains the
 We are only interested in the weighted average income from each district. Therefore, it is necessary to calculate the average income first and then calculate the total weighted average income for every district.
 After applying these calculations, the dataset looked like this:
 ![image](https://user-images.githubusercontent.com/40350018/205354228-913e9a9a-fa23-4b0c-b82d-ee1b9d39e505.png)
--	Pre-processing of Vancouver citizenship dataset
+
+Pre-processing of Vancouver citizenship dataset
 
 The citizenship dataset from Vancouver includes features of the place of birth and number of people of that birthplace in every district.
 First, the ID column had to be dropped.
