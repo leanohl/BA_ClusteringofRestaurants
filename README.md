@@ -29,9 +29,6 @@ https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
 - Vancouver dataset: cencus including income and foreigners
 https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
 
-Related Projects:
-https://towardsdatascience.com/strategic-location-for-establishing-an-asian-restaurant-c3aecf2496b1
-https://towardsdatascience.com/munich-neighborhood-clustering-using-k-means-cde98a6e3199
 
 Presentation_proposal:
 https://docs.google.com/presentation/d/1S7PtsZcltAvBRVWNfxYOq8n8C-J9iMK5DJ1AyKs_qx8/edit?usp=sharing
@@ -59,6 +56,3 @@ https://docs.google.com/presentation/d/1b57Ke9AQ9jrPqcL6t2nhY3J17rkCiHoRuwFWqvXj
 	
 #Korea
 - For analyzing korean dataset, make 'data' file and upload the csv file.
-
-
-
