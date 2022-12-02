@@ -101,7 +101,7 @@ With Folium Map it is possible to create a map displaying every district:
 ![image](https://user-images.githubusercontent.com/40350018/205354336-d3848f33-324c-4841-b9f4-6a7eff393f48.png)
 
 
--	Preprocessing of Vancouver restaurant dataset
+Preprocessing of Vancouver restaurant dataset
 The dataset provided from Kaggle contains the features: name of restaurant, type of cuisine, rating, total no of ratings, cost, landmark, opening time, current status, dine in availability, takeaway type, delivery availability and location and address. From this given features only the features: name of restaurant, type of cuisine, landmark and location and address are interesting for the given task.
 In total only 384 instances are given, which makes this dataset comparably small. 
 After dropping the unnecessary features, the dataset looked like this:
