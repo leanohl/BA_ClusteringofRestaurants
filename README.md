@@ -3,22 +3,23 @@
 
 Preprocessing reponsibility
 1. NamYeong Kim Korean restaurant data set + data scaling
-2. Sua Kim korean foreign data sets 
+2. Sua Kim korean dataset preprocessing + draw folium map + clustering 
 3. Lea Vancouver data sets + data scaling
 
 ---------------------------------------------------------------------------------------------------------------
 Vancouvver / Seoul 
 clustering the type of restaurants in specific rergion -> we can know what kind of restaurant will be opened(Japanese, Chinese, Asian, Western) 
 
-1. number of competitors / type of restaurants 
-2.  income per household   (purchasing power)
+1. number of competitors ( use the amount of each type of restaurants )
+2. income per household ( purchasing power )
 3. the percentage of foreign people 
 
 - Korean dataset of restaurant 
 https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do?tab=S
 - Korean dataset of foreigner
-https://data.seoul.go.kr/dataList/11026/S/2/datasetView.do
-- Korean dataset of Income https://golmok.seoul.go.kr/stateArea.do
+https://data.seoul.go.kr/dataList/802/S/2/datasetView.do
+- Korean dataset of Income 
+https://golmok.seoul.go.kr/stateArea.do
 
 - Vancouver dataset of restaurants
 https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset?select=yelp_academic_dataset_business.json
@@ -54,6 +55,10 @@ https://docs.google.com/presentation/d/1b57Ke9AQ9jrPqcL6t2nhY3J17rkCiHoRuwFWqvXj
 	- not only delet the instance but try to find the type of cuisine with the help of the name of the restaurant
 2. With the help of geopy I try to transfer the address to a point containing longitude and latitude
 	- benefit: with folium we can create an interactive map
+	
+	
+#Korea
+- For analyzing korean dataset, make 'data' file and upload the csv file.
 
 
 
