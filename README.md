@@ -10,11 +10,11 @@ K- MEANS CLUSTERING
   Business Analytics 
 
 
-Introduction
+[Introduction]
 Opening a restaurant in big capital cities can be quite a challenge. Not only good food needs to be saved in order to not go bankrupt, but also the people living there should value the food. To find the best location to open a restaurant depends on a lot of different factors. People in that area should earn enough money to be able to go to a restaurant. Next, if you want to open a restaurant with a cuisine from another country, some people from that country should live close to the restaurant, to be sure to have some customers. Also, it makes a restaurant more authentic, when people from that country enjoy the food. Third, there should not be too many competitors, since people than have to choose between your restaurant and others.
 Therefore, we choose to cluster the restaurants from Seoul and Vancouver in order to find the best location to open a restaurant from a specific type of cuisine. The goal is to reduce business failures due to incorrect market analysis. 
 
-Data Acquisition
+[Data Acquisition]
 To create such a clustering method, datasets from both cities including income, citizenship and a restaurant dataset are needed.
 For the city Seoul the datasets were available on data Seoul:
 	Korean dataset of restaurant: 
@@ -33,7 +33,7 @@ The dataset for the income and the citizenship was found at Opendata Vancouver:
 
 
 
-Preprocessing
+[Preprocessing]
 After importing these data sets it was necessary to do preprocessing steps to clean the datasets.
 [Seoul]
 Since we have to know the percentage of foreigners in each ‘동’. 
@@ -157,6 +157,184 @@ After merging the datasets on “neighbourhood”, the final dataset is shown in
 ![image](https://user-images.githubusercontent.com/40350018/205354745-94d18b64-4ed1-496c-92fb-8eae8c3e4541.png)
 
 Still, we need to normalize our data. In this case using Standard Scaler.
+
+
+[Model and Training]
+We decided to use the k-means Clustering for our model, since we have an unlabeled dataset and want to find useful properties of the structures of the dataset. Clustering is the task of partitioning the dataset into groups, called clusters. K- means Clustering particularly finds k cluster centers that are representative of certain regions of the data.
+The algorithm starts by selecting kk points as the initial cluster centers randomly and afterwards alternated between the steps: Expectation and Maximization. The result will be displayed, when the assignment of data points to clusters no longer changes.
+[Visualization of distribution]
+[Seoul]
+To get a better overview of the dataset, three distribution graphs were created, visualizing the three main features: income, foreigner and restaurant.
+
+![image](https://user-images.githubusercontent.com/40350018/205356293-38aad88b-5c8f-4585-8869-87e5d2059691.png)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356297-2cc8e823-f417-4aaa-bf48-cbeb35ddbb4c.png)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356304-0ac73fae-f2d0-4352-b643-405c12eb9f94.png)
+
+
+[Vancouver]
+To get a better overview of the distribution of the neighborhoods, three plots were created, visualizing the three main features: income, citizenship and restaurants.
+
+![image](https://user-images.githubusercontent.com/40350018/205356326-fc230cc9-8a6b-46f0-8d17-43a44fbdaa07.png)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356335-019b4052-5b02-4d85-8e12-2219d3b950ed.png)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356342-c42a4d27-c44a-4134-bebd-0b4fbdc85d2d.png)
+
+
+[K- means clustering]
+[Seoul]
+
+![image](https://user-images.githubusercontent.com/40350018/205356360-3628c0e2-311b-4b03-bf3d-cb0024c8e5ff.png)
+
+
+Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
+
+[Interpretation of resulting clusters]
+The k- clustering result for the Chinese restaurants is visualized in the following:
+
+![image](https://user-images.githubusercontent.com/40350018/205356431-5649d4bd-9c4c-4af7-9d02-439404a9fefa.png)
+
+
+The final step is to interpret the five clusters.
+Cluster 0: (red)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356449-f72bb17b-2a86-498a-8f0c-3a83a975ecfa.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			MID
+•	Number of Competitors:		HIGH
+Since the percentage of target customers is high however the number of competitors is high, so I would not recommend this.
+Cluster 1: (purple)
+
+![image](https://user-images.githubusercontent.com/40350018/205356485-b4424655-d5df-44bf-b851-bd58074250b2.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			HIGH
+•	Number of Competitors:		MID
+Since the spending power is high and the percentage of target customer is high while number of competitors are mid, So I would recomment this cluster1.
+Cluster 2: (blue)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356512-5d56334a-571f-4bfc-9bb1-0cf96ad400b2.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			LOW
+•	Number of Competitors:		MID
+Cluster two has high target customer but spending power is low and competitors is mid so can’t be recommended.
+Cluster 3: (turquoise)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356527-2514a6ef-f343-4a46-b749-5ec07bda6711.png)
+
+
+•	Percentage of Target Customers:	LOW
+•	Spending Power:			MID
+•	Number of Competitors:		LOW
+
+I would not recommend opening a restaurant here, since nothing is special about this cluster.
+Cluster 4: (orange) 
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356546-c7f71812-71dc-4cf3-863e-6af6c236113e.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			LOW
+•	Number of Competitors:		LOW
+The spending power is low, but there are a lot of potential customers and less competitors. Therefore, this cluster can also be an option.
+
+
+[Vancouver]
+
+![image](https://user-images.githubusercontent.com/40350018/205356571-a0127841-48ee-492d-98bb-ce028a4b555c.png)
+
+
+Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
+
+
+[Interpretation of resulting clusters]
+The k- clustering result for the Chinese restaurants is visualized in the following:
+
+![image](https://user-images.githubusercontent.com/40350018/205356621-f08f9b62-9989-4c38-866f-a79c29c82a8e.png)
+
+
+The final step is to interpret the five clusters.
+Cluster 0: (red)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356646-2bd4d6a9-d983-4a50-9813-a93b77441674.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			MID
+•	Number of Competitors:		LOW
+Since the percentage of target customers is high and the number of competitors low, I would recommend opening a restaurant here.
+Cluster 1: (purple)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			MID
+•	Number of Competitors:		LOW
+Since the percentage of target customers is high and the number of competitors low, I would recommend opening a restaurant here.
+Cluster 1: (purple)
+
+
+•	Percentage of Target Customers:	MID
+•	Spending Power:			LOW
+•	Number of Competitors:		HIGH
+Since the spending power is low and the number of competitors high, I would not recommend to open a restaurant here.
+Cluster 2: (blue)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356695-cd423ab9-b46a-453c-8b87-04122a4e70ad.png)
+
+
+•	Percentage of Target Customers:	MID
+•	Spending Power:			HIGH
+•	Number of Competitors:		LOW
+Cluster two can also be recommended, as there are only a few competitors and high spending power.
+Cluster 3: (turquoise)
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356708-ccda52ad-8dc5-4a81-8dfb-bf6757e99ca5.png)
+
+
+•	Percentage of Target Customers:	MID
+•	Spending Power:			MID
+•	Number of Competitors:		MID
+I would not recommend opening a restaurant here, since nothing is special about this cluster.
+Cluster 4: (orange) 
+
+
+![image](https://user-images.githubusercontent.com/40350018/205356723-b8c17c7f-be66-4184-ab38-672308381674.png)
+
+
+•	Percentage of Target Customers:	HIGH
+•	Spending Power:			LOW
+•	Number of Competitors:		LOW
+The spending power is low, but there are a lot of potential customers and less competitors. Therefore, this cluster can also be an option.
+
+
+[Limitations & Future work ]
+[Limitations]
+1.It is difficult to select a more specific location because there is no data
+2.It does not provide solid solution just recommendation
+3.It is difficult to define which factors are most important among each cluster
+
+[Future Work]
+1.Administrative districts are further subdivided to help in practical location selection
+2.Based on the sales data of restaurants in the subdivided area, we will find out which factors are most important
+
 
 
 
