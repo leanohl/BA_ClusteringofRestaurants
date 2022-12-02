@@ -23,7 +23,7 @@ The dataset for the income and the citizenship was found at Opendata Vancouver:
 -	https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
 For the city Seoul the datasets were available on data Seoul:
 -	Korean dataset of restaurant: 
-o	https://data.seoul.go.kr/dataList/OA-16094/S/1/datasetView.do?tab=S
+o	https://www.data.go.kr/data/15083033/fileData.do
 -	 Korean dataset of foreigner:
 o	https://data.seoul.go.kr/dataList/803/S/2/datasetView.do?tab=S
 3.	Preprocessing
