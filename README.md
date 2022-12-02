@@ -1,6 +1,9 @@
 # BA_ClusteringofRestaurants
  Team Project 5 - Clustering of Resaurants in Seoul and Vancouver
 
+![image](https://user-images.githubusercontent.com/40350018/205312224-30980cd8-3a4f-4220-8ee2-7971f487dd96.png)
+
+
 Clustering of Restaurants from Vancouver and Seoul
 K- MEANS CLUSTERING
 17101936 Kim NamYeong
