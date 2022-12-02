@@ -96,7 +96,9 @@ To get a better overview of the districts of Vancouver a folium map was created 
 ![image](https://user-images.githubusercontent.com/40350018/205354316-ca7bcc97-ea0f-43c8-8ad5-2ebc961b98f6.png)
 
 With Folium Map it is possible to create a map displaying every district:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354336-d3848f33-324c-4841-b9f4-6a7eff393f48.png)
+
 
 -	Preprocessing of Vancouver restaurant dataset
 The dataset provided from Kaggle contains the features: name of restaurant, type of cuisine, rating, total no of ratings, cost, landmark, opening time, current status, dine in availability, takeaway type, delivery availability and location and address. From this given features only the features: name of restaurant, type of cuisine, landmark and location and address are interesting for the given task.
@@ -110,12 +112,15 @@ Having a closer look on the instances, one can see the challenges this dataset p
 1.	The type of cuisine is often referred to as “Restaurant”, which has no meaning at all.
 2.	The Landmark and Location and Address contain a lot of NaN values. 
 Since the dataset is so small it is not possible to just drop the 73 rows that contain as type of cuisine only “Restaurant”.  Therefore, it was necessary to extract the information about the type of cuisine from the restaurant’s name. After doing so from the 382 instances 325 instances were left.
+
 ![image](https://user-images.githubusercontent.com/40350018/205354422-b43f2079-1f1c-4ec6-96b6-cbb7db1a7222.png)
 
 Our goal was to cluster the districts with the types of restaurants: Western, Chinese, Japanese, Rest of Asia. That’s why these types of cuisines need to be aggregated to the categories mentioned before. It resulted in the following number of types of cuisine:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354605-48b5d33d-bff2-4c86-932d-382f95023c7a.png)
 
 Regrettably only 177 instances are left.
+
 ![image](https://user-images.githubusercontent.com/40350018/205354624-3716d4d8-7bb6-4d39-9f1d-08821468e50c.png)
 
 The second challenge was to find the exact location of the restaurant. I merged the Landmark and Location and Address since they have the same meaning into a new column “place”. To be able to get the exact location with the help of geopy meaningful addresses need to be provided. Having a look at the type of places leads to a sobering result. 82 instances are located in Vancouver, but do not contain a specific address. I choose to add the name of the restaurant to the first three instances, so geopy might locate the restaurants. Another problem are the addresses containing “#” or “ú”. With some more feature engineering it was possible to get more exact locations. After applying the geopy location function I choose to drop the instances that still couldn’t be found. That resulted in a dataset with 138 instances left. With the help of folium map we could visualize to location of the restaurants.
@@ -130,9 +135,11 @@ Now, the two resulting datasets need to be merged. The challenge hereby is to me
 d=2*r*〖sin〗^(-1) (√(〖sin〗^2 ((Φ_2-Φ_1)/2)+cos⁡(Φ_1 )*cos⁡(Φ_2 )*〖sin〗^2 ((λ_2-λ_1)/2) ))
 Applying this formula on the longitude of the restaurant and the neighbourhood, it was possible to find the closest neighbourhood for every restaurant.
 The restaurants are mostly distributed over Downtown, Vancouver, as the following figure shows.
+
 ![image](https://user-images.githubusercontent.com/40350018/205354713-c3c25feb-185f-4870-90ff-33fb5819e5e2.png)
 
 Next step is to use one hot encoding to create numerical values from the four types of cuisine: Chinese, Japanese, Asian and Western Restaurant:
+
 ![image](https://user-images.githubusercontent.com/40350018/205354726-949ea026-61f7-401c-95ba-71ae1ff8b260.png)
 
 Depending on which restaurant type we want to create the clustering for, the “str_cluster” needs to be adjusted. 
@@ -140,6 +147,7 @@ In the following example I will make the analysis for Chinese restaurants. The d
 After merging the datasets on “neighbourhood”, the final dataset is shown in the following figure:
 
 ![image](https://user-images.githubusercontent.com/40350018/205354745-94d18b64-4ed1-496c-92fb-8eae8c3e4541.png)
+
 Still, we need to normalize our data. In this case using Standard Scaler.
 
 
