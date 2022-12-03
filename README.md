@@ -18,7 +18,7 @@ Next, if you want to open a restaurant with a cuisine from another country, some
 Also, it makes a restaurant more authentic, when people from that country enjoy the food. 
 Third, there should not be too many competitors, since people than have to choose between your restaurant and others.
 Therefore, we choose to cluster the restaurants from Seoul and Vancouver in order to find the best location to open a restaurant from a specific type of cuisine. 
-The goal is to reduce business failures due to incorrect market analysis. 
+The goal is to reduce business failures due to incorrect market analysis. To sum up, the higher the income level, the less competitors there were, and the more foreigners in the country lived, we conclude that it is worthwhile opening a restaurant in the area .
 
 
 [Data Acquisition]
