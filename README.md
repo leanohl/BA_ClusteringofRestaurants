@@ -292,13 +292,6 @@ Since the percentage of target customers is high and the number of competitors l
 Cluster 1: (purple)
 
 
-•	Percentage of Target Customers:	HIGH
-•	Spending Power:			MID
-•	Number of Competitors:		LOW
-Since the percentage of target customers is high and the number of competitors low, I would recommend opening a restaurant here.
-Cluster 1: (purple)
-
-
 •	Percentage of Target Customers:	MID
 •	Spending Power:			LOW
 •	Number of Competitors:		HIGH
