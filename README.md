@@ -21,8 +21,6 @@ https://data.seoul.go.kr/dataList/11026/S/2/datasetView.do
 - Korean dataset of Income https://golmok.seoul.go.kr/stateArea.do
 
 - Vancouver dataset of restaurants
-https://www.kaggle.com/datasets/yelp-dataset/yelp-dataset?select=yelp_academic_dataset_business.json
-or
 https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
 
 - Vancouver dataset: cencus including income and foreigners
