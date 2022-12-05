@@ -85,6 +85,8 @@ The dataset for the income and the citizenship was found at Opendata Vancouver:
 ## 🖥️ Initial Settings 
 Before using our code, please make the 'data' folder and upload the csv file in it.
 And upload 'clusteringKorea.ipynb' in the same folder. 
+For the Vancouver clustering download the datasets found in 'dataset_Vancouver' file and store them in a file named 'dataset_Vancouver'.
+And upload 'clusteringVancouver.ipynb' in the same folder. 
 
 ![image](https://user-images.githubusercontent.com/117417428/205530850-ac93efcb-f26e-4971-91fb-5e1ca74c704b.png)
 
