@@ -1,16 +1,14 @@
-# BA_ClusteringofRestaurants
- Team Project 5 - Clustering of Resaurants in Seoul and Vancouver
-
-Find the best location to open a restaurant of a specific cuisine in Seoul and Vancouver
-K- MEANS CLUSTERING
-17101936 Kim NamYeong
-20102104 Kim Sua
-22170091 Lea Scharpf 
-
-  Business Analytics 
+# Clustering of Restaurants in Seoul and Vancouver
+ Business Analytics Team 5 - 17101936 Kim NamYeong , 20102104 Kim Sua , 22170091 Lea Scharpf 
 
 
-[Introduction]
+Using K- MEANS CLUSTERING
+
+
+  
+
+
+## 🖥️ Introduction
 Opening a restaurant in big capital cities can be quite a challenge. 
 Not only good food needs to be saved in order to not go bankrupt, but also the people living there should value the food. To find the best location to open a restaurant depends on a lot of different factors. 
 People in that area should earn enough money to be able to go to a restaurant. 
@@ -21,7 +19,8 @@ Therefore, we choose to cluster the restaurants from Seoul and Vancouver in orde
 The goal is to reduce business failures due to incorrect market analysis. To sum up, the higher the income level, the less competitors there were, and the more foreigners in the country lived, we conclude that it is worthwhile opening a restaurant in the area .
 
 
-[Data Acquisition]
+
+## 🖥️ Data Acquisition
 To create such a clustering method, datasets from both cities including income, citizenship and a restaurant dataset are needed.
 For the city Seoul the datasets were available on data Seoul:
 
@@ -40,7 +39,7 @@ The dataset for the income and the citizenship was found at Opendata Vancouver:
 	https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
 
 
-[Setting] 
+## 🖥️ Initial Settings 
 Before using our code, please make the 'data' folder and upload the csv file in it.
 And upload 'clusteringKorea.ipynb' in the same folder. 
 
@@ -48,11 +47,12 @@ And upload 'clusteringKorea.ipynb' in the same folder.
 
 
 
-[Preprocessing]
+## 🖥️ Preprocessing 
 After importing these data sets it was necessary to do preprocessing steps to clean the datasets.
-[Seoul]
+
+### 🚩 Seoul 
 Since we have to know the percentage of foreigners in each ‘동’. 
-We have to calculate it with python codes.
+We have to calculate it with python codes. You can see the more detailed process through comments in the file. 
 Before preprocessing the foreign datasets looked like this:
 
 ![image](https://user-images.githubusercontent.com/40350018/205353920-d579c353-e422-4f8f-be84-95fa1acd248f.png)
@@ -85,7 +85,7 @@ After merging all korean datasets:
 
 
 -------------------------------------------------------------------------------------------------------------------------
-[Vancouver]
+### 🚩 Vancouver 
 Since the Vancouver census datasets consists of a lot of different spreadsheets, it was necessary to extract the important information. Therefore, two new datasets were created out of the census dataset only containing the necessary information.
 Before preprocessing the datasets looked like this:
 
@@ -174,11 +174,14 @@ After merging the datasets on “neighbourhood”, the final dataset is shown in
 Still, we need to normalize our data. In this case using Standard Scaler.
 
 
-[Model and Training]
+
+## 🖥️ Modeling and Training
 We decided to use the k-means Clustering for our model, since we have an unlabeled dataset and want to find useful properties of the structures of the dataset. Clustering is the task of partitioning the dataset into groups, called clusters. K- means Clustering particularly finds k cluster centers that are representative of certain regions of the data.
 The algorithm starts by selecting kk points as the initial cluster centers randomly and afterwards alternated between the steps: Expectation and Maximization. The result will be displayed, when the assignment of data points to clusters no longer changes.
-[Visualization of distribution]
-[Seoul]
+
+## 🖥️ Visualization of distribution 
+
+### 🚩 Seoul 
 To get a better overview of the dataset, three distribution graphs were created, visualizing the three main features: income, foreigner and restaurant.
 
 ![image](https://user-images.githubusercontent.com/40350018/205356293-38aad88b-5c8f-4585-8869-87e5d2059691.png)
@@ -190,7 +193,7 @@ To get a better overview of the dataset, three distribution graphs were created,
 ![image](https://user-images.githubusercontent.com/40350018/205356304-0ac73fae-f2d0-4352-b643-405c12eb9f94.png)
 
 
-[Vancouver]
+### 🚩 Vancouver 
 To get a better overview of the distribution of the neighborhoods, three plots were created, visualizing the three main features: income, citizenship and restaurants.
 
 ![image](https://user-images.githubusercontent.com/40350018/205356326-fc230cc9-8a6b-46f0-8d17-43a44fbdaa07.png)
@@ -202,15 +205,17 @@ To get a better overview of the distribution of the neighborhoods, three plots w
 ![image](https://user-images.githubusercontent.com/40350018/205356342-c42a4d27-c44a-4134-bebd-0b4fbdc85d2d.png)
 
 
-[K- means clustering]
-[Seoul]
+## 🖥️ K-Means clustering
+
+### 🚩 Seoul 
 
 ![image](https://user-images.githubusercontent.com/40350018/205356360-3628c0e2-311b-4b03-bf3d-cb0024c8e5ff.png)
 
 
 Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
 
-[Interpretation of resulting clusters]
+
+## 🖥️ Interpretation of resulting clusters
 The k- clustering result for the Chinese restaurants is visualized in the following:
 
 ![image](https://user-images.githubusercontent.com/40350018/205356431-5649d4bd-9c4c-4af7-9d02-439404a9fefa.png)
@@ -227,6 +232,8 @@ Cluster 0: (red)
 •	Spending Power:			MID
 •	Number of Competitors:		HIGH
 Since the percentage of target customers is high however the number of competitors is high, so I would not recommend this.
+
+
 Cluster 1: (purple)
 
 ![image](https://user-images.githubusercontent.com/40350018/205356485-b4424655-d5df-44bf-b851-bd58074250b2.png)
@@ -236,6 +243,8 @@ Cluster 1: (purple)
 •	Spending Power:			HIGH
 •	Number of Competitors:		MID
 Since the spending power is high and the percentage of target customer is high while number of competitors are mid, So I would recomment this cluster1.
+
+
 Cluster 2: (blue)
 
 
@@ -246,6 +255,8 @@ Cluster 2: (blue)
 •	Spending Power:			LOW
 •	Number of Competitors:		MID
 Cluster two has high target customer but spending power is low and competitors is mid so can’t be recommended.
+
+
 Cluster 3: (turquoise)
 
 
@@ -257,6 +268,8 @@ Cluster 3: (turquoise)
 •	Number of Competitors:		LOW
 
 I would not recommend opening a restaurant here, since nothing is special about this cluster.
+
+
 Cluster 4: (orange) 
 
 
@@ -269,7 +282,7 @@ Cluster 4: (orange)
 The spending power is low, but there are a lot of potential customers and less competitors. Therefore, this cluster can also be an option.
 
 
-[Vancouver]
+### 🚩 Vancouver 
 
 ![image](https://user-images.githubusercontent.com/40350018/205356571-a0127841-48ee-492d-98bb-ce028a4b555c.png)
 
@@ -277,7 +290,8 @@ The spending power is low, but there are a lot of potential customers and less c
 Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
 
 
-[Interpretation of resulting clusters]
+
+## 🖥️ Interpretation of resulting clusters
 The k- clustering result for the Chinese restaurants is visualized in the following:
 
 ![image](https://user-images.githubusercontent.com/40350018/205356621-f08f9b62-9989-4c38-866f-a79c29c82a8e.png)
@@ -294,6 +308,8 @@ Cluster 0: (red)
 •	Spending Power:			MID
 •	Number of Competitors:		LOW
 Since the percentage of target customers is high and the number of competitors low, I would recommend opening a restaurant here.
+
+
 Cluster 1: (purple)
 
 
@@ -301,6 +317,8 @@ Cluster 1: (purple)
 •	Spending Power:			LOW
 •	Number of Competitors:		HIGH
 Since the spending power is low and the number of competitors high, I would not recommend to open a restaurant here.
+
+
 Cluster 2: (blue)
 
 
@@ -311,6 +329,8 @@ Cluster 2: (blue)
 •	Spending Power:			HIGH
 •	Number of Competitors:		LOW
 Cluster two can also be recommended, as there are only a few competitors and high spending power.
+
+
 Cluster 3: (turquoise)
 
 
@@ -321,6 +341,8 @@ Cluster 3: (turquoise)
 •	Spending Power:			MID
 •	Number of Competitors:		MID
 I would not recommend opening a restaurant here, since nothing is special about this cluster.
+
+
 Cluster 4: (orange) 
 
 
@@ -333,13 +355,12 @@ Cluster 4: (orange)
 The spending power is low, but there are a lot of potential customers and less competitors. Therefore, this cluster can also be an option.
 
 
-[Limitations & Future work ]
-[Limitations]
+## 🖥️ Limitations 
 1.It is difficult to select a more specific location because there is no data
 2.It does not provide solid solution just recommendation
 3.It is difficult to define which factors are most important among each cluster
 
-[Future Work]
+## 🖥️ Future work 
 1.Administrative districts are further subdivided to help in practical location selection
 2.Based on the sales data of restaurants in the subdivided area, we will find out which factors are most important
 
