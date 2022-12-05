@@ -86,7 +86,7 @@ The dataset for the income and the citizenship was found at Opendata Vancouver:
 Before using our code, please make the 'data' folder and upload the csv file in it.
 And upload 'clusteringKorea.ipynb' in the same folder. 
 For the Vancouver clustering download the datasets found in 'dataset_Vancouver' file and store them in a file named 'dataset_Vancouver'.
-And upload 'clusteringVancouver.ipynb' in the same folder. 
+And upload 'clusteringVancouver.ipynb' outside of the folder. 
 
 ![image](https://user-images.githubusercontent.com/117417428/205530850-ac93efcb-f26e-4971-91fb-5e1ca74c704b.png)
 
@@ -370,25 +370,13 @@ Cluster 2: (blue)
 ![image](https://user-images.githubusercontent.com/40350018/205356695-cd423ab9-b46a-453c-8b87-04122a4e70ad.png)
 
 
-•	Percentage of Target Customers:	MID
-•	Spending Power:			HIGH
-•	Number of Competitors:		LOW
-Cluster two can also be recommended, as there are only a few competitors and high spending power.
-
-
-Cluster 3: (turquoise)
-
-
-![image](https://user-images.githubusercontent.com/40350018/205356708-ccda52ad-8dc5-4a81-8dfb-bf6757e99ca5.png)
-
-
-•	Percentage of Target Customers:	MID
+•	Percentage of Target Customers:	LOW
 •	Spending Power:			MID
-•	Number of Competitors:		MID
-I would not recommend opening a restaurant here, since nothing is special about this cluster.
+•	Number of Competitors:		LOW
+Cluster two could be an option, but doesn’t need to be, as there are only a few competitors and mid spending power.
 
 
-Cluster 4: (orange) 
+Cluster 3: (yellow) 
 
 
 ![image](https://user-images.githubusercontent.com/40350018/205356723-b8c17c7f-be66-4184-ab38-672308381674.png)
@@ -397,8 +385,7 @@ Cluster 4: (orange)
 •	Percentage of Target Customers:	HIGH
 •	Spending Power:			LOW
 •	Number of Competitors:		LOW
-The spending power is low, but there are a lot of potential customers and less competitors. Therefore, this cluster can also be an option.
-
+I would recommend opening a restaurant here that is not that expensive, since there are lot of target customers and few Restaurants.
 
 ## 🖥️ Limitations 
 1.It is difficult to select a more specific location because there is no data
