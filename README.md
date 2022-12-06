@@ -329,7 +329,8 @@ The spending power is low, but there are a lot of potential customers and less c
 
 ### 🚩 Vancouver 
 
-![image](https://user-images.githubusercontent.com/40350018/205356571-a0127841-48ee-492d-98bb-ce028a4b555c.png)
+![image](![image](https://user-images.githubusercontent.com/115057670/205810564-10d511f9-f6d6-46df-be15-794ec0cb18be.png)
+
 
 
 Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
@@ -346,7 +347,7 @@ The final step is to interpret the five clusters.
 Cluster 0: (red)
 
 
-![image](https://user-images.githubusercontent.com/40350018/205356646-2bd4d6a9-d983-4a50-9813-a93b77441674.png)
+(![image](https://user-images.githubusercontent.com/115057670/205810617-210890fe-f747-4d8f-ab8a-a3404d345c59.png))
 
 
 •	Percentage of Target Customers:	HIGH
@@ -356,7 +357,7 @@ Since the percentage of target customers is high and the number of competitors l
 
 
 Cluster 1: (purple)
-
+![image](https://user-images.githubusercontent.com/115057670/205810649-9b3d9589-685b-4531-921c-d1b3d580b4b8.png)
 
 •	Percentage of Target Customers:	MID
 •	Spending Power:			LOW
@@ -365,9 +366,7 @@ Since the spending power is low and the number of competitors high, I would not 
 
 
 Cluster 2: (blue)
-
-
-![image](https://user-images.githubusercontent.com/40350018/205356695-cd423ab9-b46a-453c-8b87-04122a4e70ad.png)
+![image](https://user-images.githubusercontent.com/115057670/205810680-9aa5be1f-bb8d-481c-bc64-c16c033a0a1c.png)
 
 
 •	Percentage of Target Customers:	LOW
@@ -377,9 +376,7 @@ Cluster two could be an option, but doesn’t need to be, as there are only a fe
 
 
 Cluster 3: (yellow) 
-
-
-![image](https://user-images.githubusercontent.com/40350018/205356723-b8c17c7f-be66-4184-ab38-672308381674.png)
+![image](https://user-images.githubusercontent.com/115057670/205810720-c8d336e1-0e0a-4114-b0b9-bfdb010609a9.png)
 
 
 •	Percentage of Target Customers:	HIGH
