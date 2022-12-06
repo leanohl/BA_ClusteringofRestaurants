@@ -329,8 +329,6 @@ The spending power is low, but there are a lot of potential customers and less c
 
 ### 🚩 Vancouver 
 
-![image](![image](https://user-images.githubusercontent.com/115057670/205810564-10d511f9-f6d6-46df-be15-794ec0cb18be.png)
-
 
 
 Before we train our model, we need to find out the hyperparameter k. To do so the squared error calculated respectively were used as metrics of their performances. An analysis using K Elbow Visualizer and Squared error for each k value evident shows that k = 5 would the best value. 
@@ -340,7 +338,7 @@ Before we train our model, we need to find out the hyperparameter k. To do so th
 ## 🖥️ Interpretation of resulting clusters
 The k- clustering result for the Chinese restaurants is visualized in the following:
 
-![image](https://user-images.githubusercontent.com/40350018/205356621-f08f9b62-9989-4c38-866f-a79c29c82a8e.png)
+![image](https://user-images.githubusercontent.com/115057670/205811064-567ecd8e-12f2-4d33-8faa-4efc1edf0d78.png)
 
 
 The final step is to interpret the five clusters.
