@@ -28,9 +28,10 @@ Korean dataset of Income:
 -https://golmok.seoul.go.kr/stateArea.do
 
 Kaggle provided the restaurant dataset for Vancouver: 
-	https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
+-https://www.kaggle.com/datasets/banaveenkumar/vancouver-restaurent-dataset
+
 The dataset for the income and the citizenship was found at Opendata Vancouver:
-	https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
+-https://opendata.vancouver.ca/explore/?refine.theme=Demographics&disjunctive.features&disjunctive.theme&disjunctive.keyword&disjunctive.data-owner&disjunctive.data-team&sort=modified
 
 
 ## 🖥️ Initial Settings 
